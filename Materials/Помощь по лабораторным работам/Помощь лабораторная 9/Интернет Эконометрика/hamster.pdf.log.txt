@@ -1,0 +1,48 @@
+Tue Apr 18 16:53:19 2017
+ - check pdf, res: registered
+Tue Apr 18 16:53:19 2017
+ - check chm, res: registered
+Tue Apr 18 16:53:19 2017
+ - check ps, res: registered
+Tue Apr 18 16:53:19 2017
+ - check xps, res: registered
+Tue Apr 18 16:53:19 2017
+ - check oxps, res: registered
+Tue Apr 18 16:53:19 2017
+ - check eps, res: registered
+Tue Apr 18 16:53:19 2017
+ - check djvu, res: registered
+Tue Apr 18 16:53:19 2017
+ - check djv, res: registered
+Tue Apr 18 16:53:19 2017
+ - check cbs, res: registered
+Tue Apr 18 16:53:19 2017
+ - check cbr, res: registered
+Tue Apr 18 16:53:19 2017
+ - check cb7, res: registered
+Tue Apr 18 16:53:19 2017
+ - check cbt, res: registered
+Tue Apr 18 16:53:19 2017
+ - check mobi, res: registered
+Tue Apr 18 16:53:19 2017
+ - check epub, res: registered
+Tue Apr 18 16:53:19 2017
+ - check fb2, res: registered
+Tue Apr 18 16:53:19 2017
+ - check fbz, res: registered
+Tue Apr 18 16:53:19 2017
+ - check zfb2, res: registered
+Tue Apr 18 16:53:19 2017
+ - check fb2z, res: registered
+Tue Apr 18 16:53:19 2017
+ - check fb2zip, res: registered
+Tue Apr 18 16:53:19 2017
+ - check pdb, res: not registered
+Tue Apr 18 16:53:19 2017
+ - pdb registered to: 
+Tue Apr 18 16:53:19 2017
+ - check prc, res: registered
+Tue Apr 18 16:53:19 2017
+ - check tiff, res: registered
+Tue Apr 18 16:53:19 2017
+ - check tif, res: registered

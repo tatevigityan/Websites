@@ -1,0 +1,12 @@
+form{
+    width: 500px;
+}
+input,select,textarea{
+    margin-bottom: 10px;
+}
+textarea{
+    max-width: 500px;
+}
+span{
+    color: red;
+}

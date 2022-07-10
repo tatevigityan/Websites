@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  7
+  <head>
+    <title>Сноуборд</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Сноуборд" />
+    <meta name="keywords" content="спорт, сноуборд" />
+    <meta name="author" content="Татев" />
+    <link href="image/favicon.png" rel="shortcut icon" type="image/png" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Сноуборд</h1>
+    </header>
+    <nav>
+      <ul type="square">
+        <li><a href="index.html">Лаб. 1</a></li>
+        <li><a href="lab2.html">Лаб. 2</a></li>
+        <li><a href="#">Лаб. 3</a></li>
+        <li><a href="lab4.html">Лаб. 4</a></li>
+        <li><a href="lab5.html">Лаб. 5</a></li>
+        <li><a href="lab6.html">Лаб. 6</a></li>
+        <li><a href="#">Лаб. 7</a></li>
+        <li><a href="lab8.html">Лаб. 8</a></li>
+        <li><a href="lab9.html">Лаб. 9</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <div>В сноуборд входят:</div>
+        <ol id="spisok">
+          <li>биг-эйр;.</li>
+          <li>борд-кросс;</li>
+          <li>слоупстайл</li>
+          <li>хафпайп</li>
+        </ol>
+        <form name="form" id="form">
+          <label for="vverx">Вставить в начало</label>
+          <input type="radio" id="verx" name="polojenie" value="vverx" />
+          <label for="vniz">Вставить в конец</label>
+          <input type="radio" id="niz" name="polojenie" value="vniz" />
+          <input type="text" id="text" />
+          <br /><br />
+          <input type="button" id="done" value="Готово" />
+        </form>
+      </article>
+      <article>
+        <a href="#" id="hide" onclick="return false">Скрыть текст</a>
+
+        <a
+          href="#"
+          style="display: none"
+          id="show"
+          onclick="return
+false"
+          >Показать текст</a
+        >
+        <div id="text">
+          Первым современным подобием сноуборда был снёрфер,придуманный и
+          изготовленный Шерманом Поппеном для дочери в 1965 году в городе
+          Мускегон, штат Мичиган. Он склеил две лыжи в одно целое. Уже в
+          следующем году было начато производство снёрфера в качестве детской
+          игрушки. По конструкции он был очень близок к скейтбордовой деке,
+          только без колёс.На протяжении 1970-х и 80-х шёл рост популярности
+          этого вида спорта, и ряд выдающихся энтузиастов, таких как Димитрий
+          Милович, Джейк Бёртон (основатель компании BurtonSnowboards), Том Симс
+          (основатель компании SimsSnowboards) и Майк Олсон (основатель компании
+          MervinManufacturing) внесли большой вклад в совершенствование
+          снаряжения, что и определило современный вид сноуборда.В 1982 году в
+          местечке СуисайдСикс (недалеко от города Вудсток, штат Вермонт) были
+          проведены первые общенациональные соревнования США по слалому. В 1983
+          году, наСодаСпрингс, штат Калифорния, состоялся первый Мировой
+          чемпионат по хаф-пайпу. Организатором выступили Том Симс и Майк
+          Чантри, местный сноуборд-инструктор.
+        </div>
+      </article>
+      <article id="pp">
+        <p>Биг-Эйр</p>
+        <p id="3">Бег</p>
+        <p>Хаф-Пайп</p>
+        <p>Сноуборд-кросс</p>
+      </article>
+      <article>
+        <input type="button" id="clon" value="Клонирование" />
+      </article>
+      <article>
+        <img src="./image/oboikru_22189.jpg" id="img.png" height="50" />
+        <input type="button" id="rzm" value="Уменьшить размер изображения" />
+        <input type="button" id="del" value="Удалить изображение" />
+      </article>
+      <article>
+        <table id="filter-table">
+          <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+          </tr>
+          <tr class="table-filters">
+            <td>
+              <input type="text" />
+            </td>
+          </tr>
+          <tr class="table-data">
+            <td>Рукаярви</td>
+            <td>Энни</td>
+            9
+          </tr>
+          <tr class="table-data">
+            <td>Марино</td>
+            <td>Джулия</td>
+          </tr>
+          <tr class="table-data">
+            <td>Блуэна</td>
+            <td>Лори</td>
+          </tr>
+          <tr class="table-data">
+            <td>Мурасэ</td>
+            <td>Кокомо</td>
+          </tr>
+          <tr class="table-data">
+            <td>Садовски-Синнотт</td>
+            <td>Зои</td>
+          </tr>
+        </table>
+      </article>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2022.Игитян Татев</p>
+    </footer>
+    <script src="./scripts/lab9.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  </body>
+</html>

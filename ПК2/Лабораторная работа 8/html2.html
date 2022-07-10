@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 8</title>
+    <script type="text/javascript">
+        var texx;
+        var countPredl, countTypes, countOperat, countOperln, countOperOut;
+        function isLetter(i){
+            return ((i >= 'a' && i <= 'я') || (i >= 'А' && i <= 'Я'));
+        }
+        function result(){
+            let file = document.getElementById('file').files[0];
+            let reader = new FileReader();
+            reader.readAsText(file);
+            reader.onload = function(){
+                let txt = new String(reader.result.replace("/", ""));
+                texx = txt.replace(/\n/, "");
+                calculate(texx);
+            }
+        }
+        function anable(){
+            document.getElementById('but').removeAttribute('disabled');
+        }
+        function calculate(text){
+            countPredl = 0;
+            countTypes = 0;
+            countOperat = 0;
+            countOperln = 0;
+            countOperOut = 0;
+            var i = 0;
+            var slovo = "";
+            var predSlovo = "";
+            while (i < texx.length)
+            {
+                if (texx[i] == '.') countPredl++;
+
+                if (isLetter(texx[i])) slovo += texx[i];
+                else
+                {
+                    if (slovo == 'Оператор' || slovo == 'оператор')
+                    {
+                        if (texx[i - slovo.length - 1] != '|' && texx[i] != '|' && texx[i - slovo.length - 1] != '=') countOperat++;
+                    }
+                    if ((slovo == 'ввода' || slovo == 'Ввода') && (predSlovo == 'Оператор' || predSlovo == 'оператор')) countOperln++;
+                    if ((slovo == 'вывода' || slovo == 'Вывода') && (predSlovo == 'Оператор' || predSlovo == 'оператор')) countOperOut++;
+                    if ((slovo == 'тип' || slovo == 'Тип') && (predSlovo == 'Сложный' || predSlovo == 'сложный')) countTypes++;
+                    if ((slovo == 'тип' || slovo == 'Тип') && (predSlovo == 'Простой' || predSlovo == 'простой'))
+                    {
+                        if (texx[i + 11] == ':')
+                        {
+                            while (text[i] != '.')
+                            {
+                                if (texx[i] == '|')
+                                {
+                                    countTypes++;
+                                }
+                                ++i;
+                            }
+                            countTypes++;
+                            countPredl++;
+                        }
+                    }
+                    if ((slovo == 'тип' || slovo == 'Тип') && (predSlovo == 'Пользовательский' || predSlovo == 'пользовательский')) countTypes++;
+                    predSlovo = slovo;
+                    slovo = "";
+                }
+                i++;
+            }
+
+            document.getElementById('pred').innerHTML = "Количество предложений: " + countPredl;
+            document.getElementById('types').innerHTML = "Количество типов: " + countTypes;
+            document.getElementById('oper').innerHTML = "Количество операторов: " + countOperat;
+            document.getElementById('operln').innerHTML = "Количество операторов ввода: " + countOperln;
+            document.getElementById('operOut').innerHTML = "Количество операторов вывода: " + countOperOut;
+            document.getElementById('but').setAttribute('disabled', true);
+        }
+    </script>
+</head>
+<body>
+    <input type="file" id="file" onchange="anable()">
+    <br>
+    <input type="button" id="but" value="Подсчет" onclick="result()">
+    <div id="text"></div>
+    <div id="pred"></div>
+    <div id="types"></div>
+    <div id="oper"></div>
+    <div id="operln"></div>
+    <div id="operOut"></div>
+    <a href="лаб8.html">Вернуться на страницу 1</a>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  7
+  <head>
+    <title>Легкая атлетика</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Легкая атлетика" />
+    <meta name="keywords" content="спорт, легкая атлетика" />
+    <meta name="author" content="Ваге" />
+    <link href="image/favicon.png" rel="shortcut icon" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Легкая атлетика</h1>
+    </header>
+    <nav>
+      <ul type="square">
+        <li><a href="index.html">Лаб. 1</a></li>
+        <li><a href="lb2.html">Лаб. 2</a></li>
+        <li><a href="#">Лаб. 3</a></li>
+        <li><a href="lab4.html">Лаб. 4</a></li>
+        <li><a href="lab5.html">Лаб. 5</a></li>
+        <li><a href="lab6.html">Лаб. 6</a></li>
+        <li><a href="#">Лаб. 7</a></li>
+        <li><a href="lab8.html">Лаб. 8</a></li>
+        <li><a href="lab9.html">Лаб. 9</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <div>В легкую атлетику входят:</div>
+        <ol id="spisok">
+          <li>Бег</li>
+          <li>Спортивная ходьба</li>
+          <li>Прыжки (в длину, высоту, тройной, с шестом)</li>
+          <li>Метание (диска, копья, молота), толкание ядра</li>
+          <li>Легкоатлетические многоборья</li>
+        </ol>
+        <form name="form" id="form">
+          <label for="vverx">Вставить в начало</label>
+          <input type="radio" id="verx" name="polojenie" value="vverx" />
+          <label for="vniz">Вставить в конец</label>
+          <input type="radio" id="niz" name="polojenie" value="vniz" />
+          <input type="text" id="text" />
+          <br /><br />
+          <input type="button" id="done" value="Готово" />
+        </form>
+      </article>
+      <article>
+        <a href="#" id="hide" onclick="return false">Скрыть текст</a>
+        8
+        <a
+          href="#"
+          style="display: none"
+          id="show"
+          onclick="return
+false"
+          >Показать текст</a
+        >
+        <div id="text">
+          Легкоатлетические упражнения проводились с целью физической
+          подготовки, а также для проведения состязаний ещё в глубокой
+          древности. Но история лёгкой атлетики, как принято считать, началась с
+          соревнований в беге на олимпийских играх Древней Греции (776 год до
+          нашей эры). Современная лёгкая атлетика начала свой путь с отдельных
+          попыток в разных странах проводить соревнования в беге, прыжках и
+          метаниях. Зафиксированы результаты в прыжке с шестом в 1789 г. (1 м 83
+          см, Д. Буш, Германия), в беге на одну милю в 1792 г. (5.52,0, Ф.
+          Поуэлл, Великобритания) и 440 ярдов в 1830 г. (2.06,0, О. Вуд,
+          Великобритания), в прыжке в высоту в 1827 г. (1.57,5, А. Уилсон,
+          Великобритания), в метании молота в 1838 г. (19 м 71 см, Район,
+          Ирландия), в толкании ядра в 1839 г. (8 м 61 см, Т. Каррадис, Канада)
+          и др.
+        </div>
+      </article>
+      <article id="pp">
+        <p>Метание копья</p>
+        <p id="3">Бег</p>
+        <p>Прыжки в длину</p>
+        <p>Прыжки в высоту</p>
+      </article>
+      <article>
+        <input type="button" id="clon" value="Клонирование" />
+      </article>
+      <article>
+        <img src="77.jpeg" id="foto" />
+        <input type="button" id="rzm" value="Уменьшить размер изображения" />
+        <input type="button" id="del" value="Удалить изображение" />
+      </article>
+      <article>
+        <table id="filter-table">
+          <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+          </tr>
+          <tr class="table-filters">
+            <td>
+              <input type="text" />
+            </td>
+          </tr>
+          <tr class="table-data">
+            <td>Исинбаева</td>
+            <td>Елена</td>
+            9
+          </tr>
+          <tr class="table-data">
+            <td>Чичерова</td>
+            <td>Анна</td>
+          </tr>
+          <tr class="table-data">
+            <td>Лебедева</td>
+            <td>Татьяна</td>
+          </tr>
+          <tr class="table-data">
+            <td>Мастерскова</td>
+            <td>Светлана</td>
+          </tr>
+          <tr class="table-data">
+            <td>Борзаковский</td>
+            <td>Юрий</td>
+          </tr>
+        </table>
+      </article>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2019.Игитян Ваге</p>
+    </footer>
+    <script src="lab9.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  </body>
+</html>

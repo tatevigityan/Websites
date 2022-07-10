@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Велоспорт</title>
+    <meta name = "description" content = "Велоспорт" >
+    <meta name = "keywords" content = "велосипед, спорт, велоспорт" >
+    <meta name = "author" content = "Королев Никита" >
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/js9.js" type="text/javascript"></script>
+  <style>
+    div{
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+    }
+    table{
+            border: 1px solid black;
+            border-collapse: collapse;
+    }
+    td, th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Велоспорт</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a  href = "index.html" >lab1</a></li>
+  <li><a  href = "lab2.html" >lab2</a></li>
+  <li><a  href = "lab32.html" >lab3</a></li>
+            <li> <a href="lab5.html">lab4</a></li>
+            <li><a href="lab5_5.html">lab5</a></li>
+            <li><a href="lab6.html">lab6</a></li>
+            <li><a href="lab7.html">lab7</a></li>
+            <li><a href="lab8.html">lab8</a></li>
+            <li><a href = "lab9.html">lab9</a></li>
+              <li><a href = "lab10.html">lab10</a></li>
+        </ul>
+      </nav>
+    <main>
+        <div id="first">
+            <ol>
+                <li id="firstEl"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li id="lastEl"></li>
+            </ol>
+            <p>Введите текст<input type="text" id="param"><br></p>
+            <p>Добавить в:<br><input type="radio" name="option" id="toBegin" value="toBegin"><label>Начало</label><br><input type="radio" name="option" id="toEnd" value="toEnd"><label>Конец</label><br></p>
+            <button onclick="addEl()">Добавить элемент</button>
+        </div>
+        <div id="second">
+            <p id="paragraph">
+                Велоспорт — это спортивная дисциплина, где преодоление трассы происходит с помощью велосипеда. Спортсмен приводит его в движение своей мускульной силой.
+            </p>
+            <button onclick="clone()">Клонировать элемент</button>
+        </div>
+        <div id="third">
+            <p><img id="image" src="img/i.jpg" width="200px"></p>
+            <button onclick="minSize()">Уменьшить изображение</button>
+            <button onclick="deleteImg()">Удалить изображение</button>
+        </div>
+        <div id="fourth">
+            <p><img id="image1" src="img/i.jpg" width="200px"></p>
+            <button onclick="animation_()">Анимация</button>
+        </div>
+        <div>
+            <table id="filter-table">
+                <tr class='table-filters'>
+                    <td>
+                        <input type="text"/>
+                    </td>
+                </tr>
+                <tr class="table-data">
+                    <td>Название велосипеда</td>
+                    <td>Дисциплина</td>
+                    <td>Тип тормоза</td>
+                </tr>
+                <tr class="table-data">
+                    <td>Shulz Lone Ranger</td>
+                    <td>Туринг</td>
+                    <td>Механический</td>
+                </tr>
+                <tr class="table-data">
+                    <td>ЦКТБ Тахион</td>
+                    <td>Гонка с раздельным стартом</td>
+                    <td>Механический</td>
+                </tr>
+                <tr class="table-data">
+                    <td>Stark Pusher</td>
+                    <td>Slope-style</td>
+                    <td>Механический</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p> Copyright © 2022. Королев Никита </p>
+    </footer>
+</body>
+</html>

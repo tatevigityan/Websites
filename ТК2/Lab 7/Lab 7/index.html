@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Р›Р°Р± 7</title>
+    <style>
+      .equation input[type="number"],
+      .info input[type="number"] {
+        width: 35px;
+      }
+      #id {
+        font-size: 1.3em;
+        font-weight: 900;
+        color: green;
+      }
+    </style>
+    <script>
+      function f(x) {
+        var a = parseFloat(document.getElementById("a").value);
+        var b = parseFloat(document.getElementById("b").value);
+        var c = parseFloat(document.getElementById("c").value);
+        var d = parseFloat(document.getElementById("d").value);
+
+        return a * Math.pow(x, 3) + b * Math.pow(x, 2) + c * x + d;
+      }
+
+      /*function df(x) {
+				var a = parseFloat(document.getElementById("a").value);
+				var b  = parseFloat(document.getElementById("b").value);
+				var c = parseFloat(document.getElementById("c").value);
+				
+				return 3 * a * Math.pow(x, 2) + 2 * b * x + c;
+			};*/
+
+      function solve() {
+        var delta = parseFloat(document.getElementById("delta").value);
+        var x_prev = parseFloat(document.getElementById("x0").value);
+        var x_curr = parseFloat(document.getElementById("x1").value);
+
+        do {
+          var x_new =
+            (x_prev * f(x_curr) - x_curr * f(x_prev)) / (f(x_curr) - f(x_prev));
+          //var x_new = x_curr - f(x_curr) / df(x_curr);
+          x_prev = x_curr;
+          x_curr = x_new;
+        } while (Math.abs(f(x_curr)) > delta);
+
+        document.getElementById("answer").innerHTML = "x = " + String(x_curr);
+      }
+    </script>
+  </head>
+
+  <body>
+    <p class="equation">
+      <input type="number" id="a" />x<sup>3</sup> +
+      <input type="number" id="b" />x<sup>2</sup> +
+      <input type="number" id="c" />x + <input type="number" id="d" /> = 0
+    </p>
+
+    <p class="info">
+      x<sub>0</sub> = <input type="number" id="x0" />; x<sub>1</sub> =
+      <input type="number" id="x1" />; &#120491; =
+      <input type="number" id="delta" disabled value="0.1" />;
+    </p>
+
+    <input
+      type="button"
+      value="Р РµС€РёС‚СЊ СѓСЂР°РІРЅРµРЅРёРµ"
+      onclick="solve();"
+    />
+
+    <p id="answer"></p>
+  </body>
+</html>

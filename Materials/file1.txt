@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <input type="file" id="file1" multiple>
+    <script>
+      var control=document.getElementById("file1");
+control.addEventListener("change", function(event){
+var i = 0, files=control.files,
+len=files.length;
+alert("Filename:"+files[i].name);
+alert("Type:"+files[i].type);
+alert("Size:"+files[i].size+"bytes");
+}
+},false);
+    </script>
+  </body>
+</html>

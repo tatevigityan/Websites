@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Lab 4</title>
+  </head>
+  <body>
+    <div class="content" id="info">
+      <h1>Подлежащее</h1>
+      <div>
+        Подлежа́щее в синтаксисе — главный член предложения, который обозначает
+        предмет, действие которого выражается сказуемым. При синтаксическом
+        разборе предложения подлежащее подчёркивается одной чертой.отвечает на
+        вопрос именительного падежа (кто? что?). Подлежащее может быть выражено
+        любыми частями речи.Подлежащее может быть выражено одним словом (простое
+        подлежащее) и сочетанием нескольких слов (составное подлежащее). Простое
+        подлежащее может быть именным, инфинитивным, а может выражаться
+        неизменяемой частью речи вроде союза или наречия.
+      </div>
+      <button class="button" onclick="SwitchPage()">Пройти тест</button>
+    </div>
+    <div class="content" id="test">
+      <h1>Тест по теме "Подлежащее"</h1>
+
+      <form onsubmit="FinishTest()">
+        <p><b>1. Что такое подлежащее?</b></p>
+        <div>
+          <input type="radio" id="answer-1" name="question-1" />это то, о чем
+          говорится в предложении<br />
+          <input type="radio" name="question-1" />это существительное<br />
+          <input type="radio" name="question-1" />это часть речи<br />
+          <input type="radio" name="question-1" />это прилагательное<br />
+          <input type="radio" name="question-1" />это часть слова
+        </div>
+
+        <p>
+          <b
+            >2. Определите, какой вопрос можно поставить от сказуемого к
+            подлежащему?</b
+          >
+        </p>
+        <div>
+          <input type="radio" name="question-2" />Какой?<br />
+          <input type="radio" id="answer-2" name="question-2" />Кто?<br />
+          <input type="radio" name="question-2" />Что делает?<br />
+          <input type="radio" name="question-2" />Что сделает?<br />
+          <input type="radio" name="question-2" />Что делающий?
+        </div>
+
+        <p><b>3. Определите, чем может быть выражено подлежащее?</b></p>
+        <div>
+          <input type="radio" id="answer-3" name="question-3" />любой
+          знаменательной частью речи<br />
+          <input type="radio" name="question-3" />только склоняемой частью
+          речи<br />
+          <input type="radio" name="question-3" />только неизменяемой частью
+          речи<br />
+          <input type="radio" name="question-3" />только спрягаемой частью
+          речи<br />
+          <input type="radio" name="question-3" />только глагольной частью речи
+        </div>
+        <button class="button" type="submit">Завершить</button>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

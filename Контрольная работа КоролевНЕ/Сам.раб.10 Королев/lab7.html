@@ -1,0 +1,139 @@
+<!DOCTYPE html >
+<html lang = "ru" >
+<head>
+<title> Велоспорт </title>
+<meta charset = "utf-8" >
+ <meta name = "description" content = "Велоспорт" >
+ <meta name = "keywords" content = "велосипед, спорт, велоспорт" >
+ <meta name = "author" content = "Королев Никита" >
+ <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/lab5.js"></script>
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<header>
+	<h1> Велоспорт</h1>
+ </header>
+ <nav>
+	<ul>
+    <li><a  href = "index.html" >lab1</a></li>
+    <li><a  href = "lab2.html" >lab2</a></li>
+    <li><a  href = "lab32.html" >lab3</a></li>
+  <li> <a href="lab5.html">lab4</a></li>
+  <li><a href="lab5_5.html">lab5</a></li>
+  <li><a href="lab6.html">lab6</a></li>
+  <li><a href="lab7.html">lab7</a></li>
+  <li><a href="lab8.html">lab8</a></li>
+  <li><a href = "lab9.html">lab9</a></li>
+	<li><a href = "lab10.html">lab10</a></li>
+  </ul>
+</nav>
+<main>
+    <div  class="form-wrap" style="right: 25%; position: relative;">
+        <h1 id="hh1">Анкета</h1>
+    </div>
+    <div id="pred"></div>
+      <form class="formamoya" method="get">
+        <div id="firstName1">
+          <label>Имя*</label>
+          <input id = "firstName",type="text" name="name" required placeholder="Введите ваше имя">
+          <button onclick="deleteEl('firstName1')">Удалить элемент</button>
+        </div>
+        <div id="lastname1">
+          <label>Фамилия*</label>
+          <input , type="text" name="Familia" required placeholder="Введите вашу фамилию">
+          <button onclick="deleteEl('lastname1')">Удалить элемент</button>
+        </div>
+        <div id = "sex1" class="radio" style="border: 1px solid; margin-bottom: 10px;">
+          <span>Пол*</span>
+          <label>
+            <input id = "sex", type="radio" name="sex" value="мужской" required>мужской
+          </label>
+          <label>
+            <input id = "sex", type="radio" name="sex" value="женский" required>женский
+          </label>
+          <button onclick="deleteEl('sex1')">Удалить элемент</button>
+        </div>
+        <div id="date1">
+          <label>Дата рождения*</label>
+          <input id = "date", type="date" name="birthday" required>
+          <button onclick="deleteEl('date1')">Удалить элемент</button>
+        </div>
+        <div id="crs">
+          <label>Курс обучения*</label>
+          <select id = "course", name="course" required>
+            <option value="1">1</option> 
+            <option value="2">2</option> 
+            <option value="3">3</option> 
+            <option value="4">4</option> 
+            <option value="5">5</option> 
+          </select> 
+          <button onclick="deleteEl('crs')">Удалить элемент</button>
+        </div> 
+        <div id="formedu1">
+          <label>Форма обучения*</label>
+          <select name="formaobucheniya", id="formedu" required>
+            <option value="Бакалавриат">Бакалавриат</option> 
+            <option value="Магистратура">Магистратура</option> 
+            <option value="Аспирантура">Аспирантура</option> 
+            <option value="Специалитет">Специалитет</option> 
+          </select>
+          <button onclick="deleteEl('formedu1')">Удалить элемент</button>
+        </div>
+        <div>
+          <div id="que1">
+            <label>Введите вид шоссейного велосипеда*</label>
+            <input type="text" name="primer1" required>
+            <button onclick="deleteEl('que1')">Удалить элемент</button>
+          </div>
+          <div id = "que2">
+            <label>Выберите существующий вид шоссейного велосипеда*</label>
+            <select name="primer2", class="questions">
+              <option value="Двухподвесный">Двухподвесный</option> 
+              <option value="Эндуранс">Эндуранс</option> 
+              <option value="Регид-найнер">Регид-найнер</option>
+            </select> 
+            <button onclick="deleteEl('que2')">Удалить элемент</button>
+          </div>
+          <div id="que3">
+          <ul style="border: 1px solid; margin-bottom: 10px;">
+            Какой велосипед считается самым легким?*
+            <li >
+              <input  type="checkbox" name="SCOTT ADDICT SL">SCOTT ADDICT SL</button>
+            </li>
+            <li>
+              <input  type="checkbox" name="Outleap Heritage" >Outleap Heritage</button>
+            </li>
+            <li>
+              <input  type="checkbox" name="ХВЗ Старт-Шоссе">ХВЗ Старт-Шоссе</button>
+            </li>
+          </ul>
+          <button onclick="deleteEl('que3')">Удалить элемент</button>
+        </div>
+        </div>
+        <div>
+          <label>Комментарий</label>
+        </div>
+        <div>
+          <textarea id="comments", rows="10" cols="50" id="text" name="kommentarii" ></textarea>
+        </div>
+        <div >
+          <a id="download">Записать файл</a>
+        </div>
+        <br>
+        <button type="submit">Отправить</button> 
+        <input type="reset" name="reset" value="Сброс">
+        <div id="time"></div> 
+        <div id = "cntOfInpt"></div>
+        <input type="checkbox" id="textarea" value="textarea" onchange="chbox()">Создать текстовое поле<br>
+            <div id="checkbox1"></div>
+            <p><button onclick="createObject()">Создать объект</button></p>
+      </form> 
+    </div>
+  </main>
+<footer> 
+<p> Copyright © 2022. Королев Никита </p>
+ </footer>
+</body>
+</html>

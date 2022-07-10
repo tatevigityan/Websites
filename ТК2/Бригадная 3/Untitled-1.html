@@ -1,0 +1,85 @@
+<!DOCTYPE>
+<html>
+<head>
+<body>
+<div class="row">
+<div id="block-left">
+<span>пока</span>
+</div>
+<div id="block-right">
+<span>привет</span>
+</div>
+</div>
+
+<div class="button">
+<a href="#" id="button">Поменять местами</a>
+</div>
+<style type="text/css">
+.row {
+text-align: center;
+margin-bottom: 20px;
+}
+
+#block-left {
+display: inline-block;
+box-sizing: border-box;
+width: 250px;
+height: 150px;
+margin: 20px;
+padding: 20px;
+background: #FFBAB9;
+background: -webkit-linear-gradient(top left, #FFBAB6, #FF5151);
+background: -moz-linear-gradient(top left, #FFBAB6, #FF5151);
+background: linear-gradient(to bottom right, #FFBAB6, #FF5151);
+font-size: 20px;
+border: 1px solid #ddd;
+}
+#block-right {
+display: inline-block;
+box-sizing: border-box;
+width: 250px;
+height: 150px;
+margin: 20px;
+padding: 20px;
+background: #B9FFC4;
+background: -webkit-linear-gradient(top left, #B9FFC4, #51FF7F);
+background: -moz-linear-gradient(top left, #B9FFC4, #51FF7F);
+background: linear-gradient(to bottom right, #B9FFC4, #51FF7F);
+font-size: 20px;
+border: 1px solid #ddd;
+}
+
+.button {
+text-align: center;
+}
+.button a {
+font-size: 16px;
+color: #000;
+}
+</style>
+
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$('#button').click(function(){
+$('.row > div').each(function() {
+if ($(this).next()) {
+el = $(this).next();
+} else {
+el = $(this).prev();
+}
+
+var copy_from = $(this).clone(true);
+$(el).replaceWith(copy_from);
+
+var copy_to = $(el).clone(true);
+$(this).replaceWith(copy_to);
+});
+
+return false;
+});
+
+</script>
+
+</body>
+</html>
+</head>

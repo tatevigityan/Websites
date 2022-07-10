@@ -1,0 +1,98 @@
+body{
+    background : #f1f1f1 ;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 96%;
+    margin: 0px;
+    padding: 20px;
+    }
+    h1,h2{
+    text-align : center ;
+    }
+    img{
+    border-style: dotted;
+    opacity: 50%;
+    }
+    ul.hr li {
+    display: inline;
+    padding: 3px;
+    }
+    
+    header{
+    background-color: white;
+    padding: 20px;
+    }
+    th{
+    background-color: rgb(87, 87, 87);
+    }
+    a.gg {
+    text-decoration: none;
+    }
+    a.gg:hover{
+    text-decoration: underline;
+    }
+    a.gg{
+    color: green;
+    }
+    tr:nth-child(2n) {
+    background-color:white;
+    }
+    table{
+    width: 50%;
+    }
+    nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    margin: 0px;
+    padding: 0px;
+    }
+    article h2{
+    border: 1px solid;
+    text-decoration: underline;
+    border-color: rgb(105, 7, 61);
+    }
+    nav li{
+    float : left ;
+    }
+    .not{
+    width: 206px;
+    height: 100px;
+    overflow: scroll;
+    padding: 5px;
+    background-color: rgb(182, 181, 181);
+    overflow-x: hidden;
+    }
+    nav li a{
+    display : block ;
+    color : #FFF ;
+    text-align : center ;
+    text-decoration : none ;
+    padding : 14px 16px ;
+    
+    }
+    nav li a:hover{
+    background-color: #111;
+    }
+    /* article{
+    background-color: rgb(248, 243, 174);
+    padding: 20px;
+    } */
+    footer{
+    background-color: #ddd;
+    margin-top: 1;
+    padding: 10px;
+    }
+    .formamoya{
+        width: 500px;
+            }
+            input,select,textarea
+            {
+              margin-bottom: 10px;
+            }
+.hh1{
+  color: darkred;
+}
+.lbl{
+  color:blue;
+  font-weight: bold;
+}

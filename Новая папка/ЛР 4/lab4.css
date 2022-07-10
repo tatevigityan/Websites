@@ -1,0 +1,43 @@
+
+h2.h22 {
+    text-decoration: underline;
+    border: medium solid rgb(17, 4, 48);
+}
+article{
+    background: rgb(182, 95, 15);
+}
+img{
+    float: right;
+    border: 2px dashed rgb(10, 59, 116);
+    padding: 1px;
+    opacity: 0.8;
+    width: 700px;
+}
+ul.ggg{
+    font-weight: bold;
+    list-style-type: none;
+}
+ul.ggg li{
+    float:left;
+    padding: 0px 14px;
+}
+p.bbb{
+    width: 217px;
+    height: 100px;
+    overflow: auto;
+}
+th.beg{
+    background-color: rgb(71, 39, 214);
+}
+table tr:nth-child(2n){
+    background-color:rgb(146, 160, 206);
+}
+article a{
+    text-decoration: none;
+}
+article a:hover{
+    text-decoration: underline;
+}
+article a:visited{
+    color: rgb(114, 214, 77);
+}

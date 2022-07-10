@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div id="file2"></div>
+<script>
+var target = document.getElementById("file2");
+target.addEventListener("dragover", function(event) {
+  event.preventDefault(); // отменяем действие по умолчанию
+}, false);
+target.addEventListener("drop", function(event) {
+  // отменяем действие по умолчанию
+  event.preventDefault();
+  var i = 0,
+   files = event.dataTransfer.files,
+   len = files.length;
+   for (; i < len; i++) {
+     alert("Filename: " + files[i].name);
+     alert("Type: " + files[i].type);
+     alert("Size: " + files[i].size + " bytes");
+   }
+}, false);
+
+    </script>
+  </body>
+</html>

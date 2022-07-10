@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/script.js"></script>
+    <title>Бригадная работа №1</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Матрица</h1>
+      <div class="matrix">
+        <div>
+          <input id="11" type="number" />
+          <input id="12" type="number" />
+          <input id="13" type="number" />
+        </div>
+        <div>
+          <input id="21" type="number" />
+          <input id="22" type="number" />
+          <input id="23" type="number" />
+        </div>
+        <div>
+          <input id="31" type="number" />
+          <input id="32" type="number" />
+          <input id="33" type="number" />
+        </div>
+      </div>
+      <h4 class="result"></h4>
+      <button class="resultButton" role="button" onclick="findDeterminant()">
+        Рассчитать определитель
+      </button>
+    </div>
+  </body>
+</html>

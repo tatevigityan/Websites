@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function F1(){   
+    var db = openDatabase("BD1", "0.1", "aaaaaa", 20000);
+    if(!db){alert("Failed to connect to database");}
+    else{alert("Ok!");}
+  }
+  </script>
+</head>
+<body>
+  <button type="button" onClick="F1()">Button</button>
+</body>
+</html>
